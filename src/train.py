@@ -4,7 +4,8 @@ Baseline training script for the Iris classifier.
 Used to demonstrate a version-controlled ML project structure.
 """
 import joblib
-from sklearn.datasets import load_iris
+from sklearn.metrics import classification_report
+print (classification_report (y_test, predictions) )
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
